@@ -1,0 +1,11 @@
+bill_out = int(input("What is the bill out?"))
+percent = int(input("Is driver percent 70% or 75%?: "))
+driver_pay = 0
+insurance = bill_out * .04
+if percent == 70:
+    driver_pay = (bill_out - insurance) * .7
+elif percent == 75:
+    driver_pay = (bill_out - insurance) * .75
+else:
+   print("Wrong input")
+print(f"Driver pay is: ${driver_pay} ")
